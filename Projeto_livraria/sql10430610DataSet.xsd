@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="sql10430610DataSet" targetNamespace="http://tempuri.org/sql10430610DataSet.xsd" xmlns:mstns="http://tempuri.org/sql10430610DataSet.xsd" xmlns="http://tempuri.org/sql10430610DataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="sql10430610ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="sql10430610ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Projeto_livraria.Properties.Settings.GlobalReference.Default.sql10430610ConnectionString" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbl_livrariaTableAdapter" GeneratorDataComponentClassName="tbl_livrariaTableAdapter" Name="tbl_livraria" UserDataComponentName="tbl_livrariaTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="sql10430610ConnectionString (Settings)" DbObjectName="sql10430610.tbl_livraria" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `id`, `Descricao`, `Genero` FROM `tbl_livraria`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbl_testeTableAdapter" GeneratorDataComponentClassName="tbl_testeTableAdapter" Name="tbl_teste" UserDataComponentName="tbl_testeTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="sql10430610ConnectionString (Settings)" DbObjectName="sql10430610.tbl_teste" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `id`, `descricao` FROM `tbl_teste`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="sql10430610DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="sql10430610DataSet" msprop:Generator_UserDSName="sql10430610DataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tbl_livraria" msprop:Generator_TableClassName="tbl_livrariaDataTable" msprop:Generator_TableVarName="tabletbl_livraria" msprop:Generator_TablePropName="tbl_livraria" msprop:Generator_RowDeletingName="tbl_livrariaRowDeleting" msprop:Generator_RowChangingName="tbl_livrariaRowChanging" msprop:Generator_RowEvHandlerName="tbl_livrariaRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_livrariaRowDeleted" msprop:Generator_UserTableName="tbl_livraria" msprop:Generator_RowChangedName="tbl_livrariaRowChanged" msprop:Generator_RowEvArgName="tbl_livrariaRowChangeEvent" msprop:Generator_RowClassName="tbl_livrariaRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tbl_teste" msprop:Generator_TableClassName="tbl_testeDataTable" msprop:Generator_TableVarName="tabletbl_teste" msprop:Generator_TablePropName="tbl_teste" msprop:Generator_RowDeletingName="tbl_testeRowDeleting" msprop:Generator_RowChangingName="tbl_testeRowChanging" msprop:Generator_RowEvHandlerName="tbl_testeRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_testeRowDeleted" msprop:Generator_UserTableName="tbl_teste" msprop:Generator_RowChangedName="tbl_testeRowChanged" msprop:Generator_RowEvArgName="tbl_testeRowChangeEvent" msprop:Generator_RowClassName="tbl_testeRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
